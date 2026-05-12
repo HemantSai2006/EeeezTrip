@@ -1,0 +1,28 @@
+.toggle-row {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 4px;
+  margin-bottom: 14px;
+  gap: 4px;
+}
+
+.tgl {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  background: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.tgl--on {
+  background: var(--brand);
+  color: #fff;
+  box-shadow: 0 2px 10px rgba(26, 58, 92, 0.25);
+}

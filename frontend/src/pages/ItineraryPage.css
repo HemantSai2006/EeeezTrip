@@ -1,0 +1,144 @@
+/* ===== CONTROLS ===== */
+.itin-controls {
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.itin-control-item {
+  flex: 1;
+  min-width: 120px;
+}
+
+.itin-control__label {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.itin-control__value {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ===== ITINERARY CARD ===== */
+.itin-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.itin-card__hdr {
+  background: linear-gradient(90deg, var(--brand), var(--brand2));
+  color: #fff;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itin-card__title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.itin-card__cost {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.itin-card__body {
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* ===== ITINERARY ITEM ===== */
+.itin-item {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+}
+
+.itin-time {
+  font-size: 11px;
+  color: var(--accent2);
+  font-weight: 700;
+  min-width: 52px;
+  padding-top: 3px;
+  letter-spacing: 0.3px;
+}
+
+.itin-dot {
+  width: 9px;
+  height: 9px;
+  background: #bfdbfe;
+  border: 2px solid var(--brand2);
+  border-radius: 50%;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.itin-content h5 {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.itin-content p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+/* ===== BUDGET BOX ===== */
+.budget-box {
+  background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.budget-box__title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: 4px;
+}
+
+.budget-box__sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.budget-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.budget-box__total {
+  border-top: 1px solid #bfdbfe;
+  margin-top: 12px;
+  padding-top: 12px;
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 16px;
+}
+
+@media (max-width: 680px) {
+  .budget-grid { grid-template-columns: 1fr; }
+}

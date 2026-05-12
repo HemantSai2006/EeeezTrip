@@ -1,0 +1,60 @@
+.hotel-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.hotel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card__img {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.hotel-card__body {
+  padding: 14px;
+}
+
+.hotel-card__name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0 2px;
+}
+
+.hotel-card__stars {
+  color: var(--accent);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.hotel-card__stars span {
+  color: var(--muted);
+  margin-left: 4px;
+}
+
+.hotel-card__price {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.hotel-card__price small {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.hotel-card__meta {
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-top: 3px;
+  line-height: 1.5;
+}
