@@ -1,6 +1,8 @@
 node_modules/
+build/
 .env
 .env*
 !*.example
+!frontend/.env.production
 *.ipynb
 .DS_Store
